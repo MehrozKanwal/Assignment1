@@ -1,0 +1,31 @@
+void main() {
+//Mehroz
+num s1 = 90;
+ num s2 = 88;
+  num s3 = 65;
+  num s4 = 58;
+  num s5 = 77;
+  num sum = s1 + s2 + s3 + s4 + s5;
+  num percentage =  (( sum / 500 ) * 100 ) ;
+   print ("your percentage is ${sum}");
+  print ("your percentage is ${percentage}");
+  
+  if ( percentage >= 80  ){
+    print(" Your grade is 'A+'" ) ;
+  }
+else if ( percentage >= 70 && percentage < 80  ){
+    print(" Your grade is 'A'" ) ;
+}
+  else if ( percentage >= 60 && percentage < 70  ){
+    print(" Your grade is 'B'" ) ;
+}
+else if ( percentage >= 50 && percentage < 60  ){
+    print(" Your grade is 'C'" ) ;
+}
+      else if ( percentage >= 40 && percentage < 50  ){
+    print(" Your grade is 'D'" ) ;
+}
+  else{
+    print("You are failed in this semester:(");
+  }
+}
