@@ -1,5 +1,5 @@
 void main() {
-//Mehroz
+//Mehroz Kanwal
 num s1 = 90;
  num s2 = 88;
   num s3 = 65;
