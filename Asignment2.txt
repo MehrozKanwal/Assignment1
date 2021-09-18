@@ -1,0 +1,259 @@
+//Mehroz Kanwal
+
+//Question No.1 :
+Answer:
+There are three operators in dart.
+1) Arithmetic Operators
+   Examples:
+   +Add, -Subtract , *Multiply , /Divide , %Mode , ++increment , --Decrement
+2) Equality and Relational operators.
+   Example:
+   > greater than, < lesser than, >= greater than equal to, <= lessser than equal to, == equality, != not equal
+3) Logical Operators.
+   Examples:
+   || Or, && And. ! Not 
+
+** ________________________**_________________________________
+
+
+//Question No.2 :
+Answer:
+
+  var a = 2;
+  var b = 1;
+  var result = -- a - --b + ++b + b-- ;
+  //Output: 3
+ var result = -- a; 
+  //Output: 1
+ var result = -- a - --b; 
+  //Output: 1
+ var result = -- a - --b + ++b ; 
+  //Output: 2
+ var result = -- a - --b + ++b + b-- ;
+   //          1   -  0  +  1 +  1
+  //Output: 3
+
+** ________________________**_________________________________
+
+
+//Question No.3 :
+Answer:
+void main ( ){
+var ticket = 600;
+var cost = ticket * 5 ;
+print (" Cost of 5 tickets ${cost} PKR");
+
+}
+
+
+** ________________________**_________________________________
+
+
+//Question No.4 :
+void main (  ) {
+  
+
+List<int> first = [1,2,3,4,5,6,7];
+  List<int> second = [3,5,6,7,9,10]; 
+  List<int> output = []; 
+  first.forEach((element) {
+  if(!second.contains(element)){
+    output.add(element); } 
+  });
+  print(output);
+}
+
+
+** ________________________**_________________________________
+
+
+//Question No.5 :
+Answer:
+Null Safety operator is ?,
+If you want a variable of type String to accept any string or the value null, give the variable a nullable type by adding a question mark (?) after the type name. For example, a variable of type String? can contain a string, or it can be null.
+
+null-aware operator is ??,
+ which returns the expression on its left unless that expression’s value is null, in which case it evaluates and returns the expression on its right:
+
+print(1 ?? 3); // <-- Prints 1.
+print(null ?? 12); // <-- Prints 12.
+
+** ________________________**_________________________________
+
+
+
+
+//Question No.6 :
+Answer:
+Data Types in Dart:
+1)Number:
+Keyword: int , double ,num
+Examples:
+int age = 18;
+double temperature = 16.5;
+num age = 19;
+num temperature = 18.5;
+
+2)Strings:
+Keyword: String
+Examples:
+String name = “ALI”;
+String name = “Street No 123 abc karachi ”;
+String date = “28-March-2021”;
+String email = “bilalrehman080808@gmail.com”
+
+
+3)Booleans:
+Keyword: bool 
+Exampes:
+bool status = true;
+	OR
+bool status = false;
+bool calculation;
+calculation = 12>5;
+print(calculation);
+
+4)Lists:
+Keyword: List
+Examples:
+List<int> first = [1,2,3,4,5,6,7,8,9,10];
+
+5)Maps:
+Keyword: Map 
+Examples:
+var fruit = {1: 'Apple', 2: 'Orange’};
+Map <dynamic, int> data={'Bilal':1, 'Mehroz':2};
+** ________________________**_________________________________
+
+
+//Question No.7 :
+Answer:
+void main (  ) {
+  
+List<int> second = [7 , 14 , 21 , 28, 35 , 42 , 49 , 56 ,63 , 70];
+List<int> first = [1,2,3,4,5,6,7,8,9,10];
+  var table = Map.fromIterables(first, second);
+  print(table);
+}
+
+** ________________________**_________________________________
+
+//Question No.8 :
+Answer:
+var pass = AbcwMk12;
+var validPass = prompt("Enter your password");
+if (validPass === pass){
+alert("Correct!The password you entered matches the original password. ");
+else if(validPass === null){
+alert("Please Enter your password");
+}
+else{
+alert("Incorrect Password!");
+}
+
+
+** ________________________**_________________________________
+
+//Question No.9 :
+Answer:
+void main (  ) {
+  
+
+  List <String> stdName= [ "Mehroz" , "Eman" , "Hafsa" ];
+List <int>  stdScore = [400 , 350 , 200];
+  print("Name with score:");
+  var totalScore = Map.fromIterables(stdName, stdScore);
+  print(totalScore);
+  var e1 = stdScore[0] / 500*100 ;
+  var e2 = stdScore[1] / 500*100 ;
+  var e3 = stdScore[2] / 500*100 ;
+  var percent = [e1, e2,e3];
+    print("Name with Percentage:");
+  var stdPercent = Map.fromIterables(stdName, percent);
+  print (stdPercent);
+}
+}
+
+
+** ________________________**_________________________________
+
+//Question No.10 :
+Answer:
+Legal Variable names:
+1) int score;
+2) String name1;
+3) String student_Name;
+4) num x;
+5) int stdId;
+
+
+Illegal Variable names:
+1) int final;
+2) String 1student;
+3) String student  Name;
+4) num #Mehr;
+5) int "marks";
+
+
+** ________________________**_________________________________
+
+//Question No.11 :
+Answer:
+void main (  ) {
+  var a = ["Hyder","abad"];
+  print(a);
+  var b = a[0]+a[1];
+  print(b);
+ 
+ a.removeRange(0,1);
+ a.add("Islam");
+  print(a);
+  b = a[1]+a[0];
+    print (b);
+}
+
+
+** ________________________**_________________________________
+
+//Question No.12 :
+Answer:
+void main (  ) {
+  
+  String customer_Name =  "Mehroz";
+  int current_Month = 09;
+  int no_Ofunits = 150;
+  num charges_perUnit = 80;
+  num net_amount = no_Ofunits * charges_perUnit;   
+  num latePament_Charge = (no_Ofunits * 5);
+  num gross_amount = net_amount + latePament_Charge ;
+  
+  
+    print("Customer name: $customer_Name");
+  print("Current Month: $current_Month");
+  print("Number of Units: $no_Ofunits" );
+  print("Charges per Unit: $charges_perUnit");
+  print("Net amount PayAble: $net_amount");
+  print("Late payment Surcharge: $latePament_Charge");
+  print("Gross Amount Payable: $gross_amount");
+  }
+
+
+** ________________________**_________________________________
+
+//Question No.13 :
+Answer:
+
+void main(){
+
+ int date =  32;
+  if(date >= 1 && date <= 15){
+    print(" First fifteen days of the month");
+  }
+  else if (date <= 31){
+        print("Last days of the month");
+  }
+  else{
+    print("You written incorrect date!");
+  }
+}
+
