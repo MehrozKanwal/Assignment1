@@ -1,0 +1,176 @@
+
+//Mehroz Kanwal
+
+// Question 1 : 
+class Ball{
+
+}
+
+void main() {
+  final List<Ball> _ballList = new List<Ball>.generate(5,(i)=>Ball());
+  for(int i=0;i<_ballList.length;i++) {
+    print(_ballList[i]);
+  }
+}
+
+//2nd Method:
+class Ball{
+
+}
+void main (){
+final List<Ball> _ballList = [ for (var i = 0; i < 5; i++) Ball()];
+  print(_ballList);
+} 
+
+//3rd Method:
+class Ball{
+
+}
+void main (){
+final List<Ball> _ballList = List<Ball>.filled(5, Ball());
+  print(_ballList);
+} 
+
+// Question 2 : 
+
+//1st Method:
+void main(){
+  List<int> first = [1,2,3,4,5,6,7];
+List<int> second = [3,5,6,7,9,10];
+var difference = first.toSet().difference(second.toSet()).toList();
+print(difference);
+}
+
+
+//2nd Method:
+void main(){
+  List<dynamic> first = [1,2,3,4,5,6,7];
+List<dynamic> second = [3,5,6,7,9,10];
+List<dynamic> output = [];
+
+  output.add(first.where((element) => !second.contains(element)));
+  print(output.toList());
+}
+
+
+
+// Question 3 :
+
+//1st Method:
+void main(){
+var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+var b = [for (var i in a) if (i % 2 == 0) i] ;
+print(b);
+}
+
+
+//2nd Method:
+void main(){
+  
+ var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  var b = [];
+
+    b.add((a.where((e) => e % 2 == 0)));
+    
+  
+  print(b);
+}
+ 
+// Question 4 :
+void main(){
+  int num = 9;
+  int m = 0,
+  flag = 0;
+  m = num ~/ 2;
+  for(int i = 2;i<=m;i++){
+    if(num % i == 0){
+      print('$num is not a prime number');
+      flag=1;
+      break;
+    }
+  }
+  if(flag==0){
+    print('$num is prime number');
+  }
+}
+
+// Question 5 :
+
+void main(){
+ for(int i = 1; i<= 15; i++ ) {
+   print("7 x $i = ${i*7}");
+ }  
+}
+
+// Question 6 :
+void main(){
+List <String> fruits = ["apple" , "banana", "mango", "orange", "strawberry"];
+for(int i =0; i< fruits.length; i++){
+  print(fruits[i]);
+} 
+} 
+
+// Question 7 :
+void main (){
+  
+  for (int i = 1; i<= 100; i++ ){
+    print(i*5);
+  }
+}
+
+
+// Question 8 :
+
+void main (){
+  num tempCel = 28;
+  num tempFaren = 100;
+  num tempCelsius = (tempFaren - 32)*5/9;
+  num tempFarenhiet = 9/5*(tempCel + 32);
+  print("Temperature in celsius is $tempCelsius");
+
+  print("Temperature in Fahrenhiet is $tempFarenhiet");
+}
+
+// Question 9 :
+
+void main (){
+  
+  num a = 43;
+  num b = 54;
+  var operator = "-" ;
+  if( operator == "+"){
+    num c = a + b;
+    print("The sum is $c"); 
+  }
+  else if( operator == "-"){
+    num c = a - b;
+    print("The sum is $c"); 
+  }
+  else if( operator == "*"){
+    num c = a * b;
+    print("The sum is $c"); 
+  }
+  else if( operator == "/"){
+    num c = a / b;
+    print("The sum is $c"); 
+  }
+  else if( operator == "%"){
+    num c = a % b;
+    print("The sum is $c"); 
+  }
+  else{
+    print("Enter correct Operator!");
+  }
+}
+
+// Question 10 :
+
+void main (){
+  String vowels = "c";
+  if(vowels == "a" || vowels == "e" || vowels == "i" || vowels == "o" || vowels == "u"){
+    print("True! It's a vowel");
+  } 
+  else{
+    print("False! It's consonent");
+  }
+}
