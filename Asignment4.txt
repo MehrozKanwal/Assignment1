@@ -1,0 +1,140 @@
+//Mehroz Kanwal
+
+// Question 2:
+
+void main (){
+  tableNum(6);
+    }
+  void tableNum(num no){
+    print("Print The table of number = $no :");
+    for(int i=1; i<=10; i++){
+      print("$no * $i  = ${no*i}");
+    }
+    
+  }
+
+// Question 3:
+
+void main() {
+List lst = [2,4,6,8,9];
+num number = 2;
+  for(int i = 0; i<lst.length; i++){
+   dividefunc(number, lst[i]);
+  }
+}
+
+ void  dividefunc(number, i){
+   print("The number is divided = $i");
+    num a ;
+   a = i / number;
+      print("The result  after divided is = $a"); 
+  print("");
+  
+ }
+
+
+// Question 4:
+
+void main() {
+  
+List <String> name = ["Mehroz", "Neha" , "Ali" ,"Bilal" , "Tatheer"];  
+List <dynamic> marks = [450, 300,400, 200, 150];  
+   
+  
+    for(int i = 0; i<marks.length; i++){
+          funcMarksheet(name[i] , marks[i] );
+  double perc = (marks[i] / 500) * 100 ;
+    print("Student Percentage: ${perc}%");
+  funcGrade(perc);
+         print("");
+}
+  
+
+}
+
+void funcGrade(perc){
+  if(perc >= 80){
+    print("Grade: A+");
+  }
+  else if(perc >= 70){
+print("Grade: A");
+  }
+  else if(perc >= 60){
+print("Grade: B");
+  }
+ else{
+   print("Fail!");
+ }
+}
+ void funcMarksheet(name , marks ){
+   print("Student Name: ${name}");
+    print("Student Marks: ${marks}");
+}
+  
+// Question 5: 
+void main() {
+A obj = A();
+ 
+  print( obj.func(6));
+}
+class A{
+  num a =5;
+  double func(a){
+  return a;
+  }
+}
+
+// Question 6: 
+void main() {
+B obj = B();
+ obj.funcName();
+}
+
+class B {
+  void funcName(){
+print("My name is Mehroz");
+  }
+}
+
+
+// Question 7: 
+void main() {
+Intro obj = Intro(name:"Mehroz", age:20, education:"UnderGraduate");
+obj.myIntro();
+}
+
+class Intro {
+ String name;
+  int age;
+  var education;
+  Intro({required this.name,required this.age, required this.education});
+  void myIntro(){
+      print("My name is $name");
+      print("My age is $age");
+      print("My education is $education");
+  }
+}
+
+// Question 8: 
+
+void main() {
+  
+B obj = B();
+   obj.saying();
+  obj.sayingMyName();
+  
+}
+
+class A{
+  void saying(){
+    print("Hellow");
+}
+  
+}
+  
+class B extends A{
+void sayingMyName(){
+print("Mehroz");
+}
+}  
+  
